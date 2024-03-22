@@ -1,6 +1,6 @@
-# Word Game
+# 1. Word Game
 
-## Joy of React, Project I
+## 1.1. Joy of React, Project I
 
 In this project, we'll recreate a popular online word game, Wordle:
 
@@ -8,7 +8,7 @@ In this project, we'll recreate a popular online word game, Wordle:
 
 In Wordle, users have 6 attempts to guess a 5-letter word. You're helped along the way by ruling out letters that aren't in the word, and being told whether the correct letters are in the correct location or not.
 
-## Getting Started
+## 1.2. Getting Started
 
 This project is created with [Parcel](https://parceljs.org/), a modern JS build tool. It's intended to be run locally, on your computer, using Node.js and NPM.
 
@@ -20,7 +20,7 @@ If you're not sure how to run a local development server, or if you run into som
 >
 > This workshop is split into 5 exercises, and each exercise has a solution video. If you spend more than 10 minutes stuck on an exercise, I encourage you to **watch the solution.** If things are still unclear after that, please ask questions in the Discord community!
 
-## Exercise 1: GuessInput
+## 1.3. Exercise 1: GuessInput
 
 First thing’s first: we need a way to submit guesses!
 
@@ -60,7 +60,7 @@ Here's a quick screen recording of the expected result:
 - The input should have a minimum and maximum length of 5.
   - **NOTE:** The `minLength` validator is a bit funky; you may wish to use the `pattern` attribute instead. This is discussed in more detail on the [Solution page](https://courses.joshwcomeau.com/joy-of-react/project-wordle/06-solution#an-alternative-to-minlength).
 
-## Exercise 2: Keeping track of guesses
+## 1.4. Exercise 2: Keeping track of guesses
 
 Instead of obliterating the user's guess, let's add it to a list, so we can show the user all of their previously-submitted guesses!
 
@@ -85,7 +85,7 @@ And here's an example of the expected DOM structure:
 - When the user submits their guess, that value should be rendered within this new component.
 - There should be no key warnings in the console!
 
-## Exercise 3: Guess slots
+## 1.5. Exercise 3: Guess slots
 
 In the real Wordle game, the initial screen shows 6 rows of 5 squares:
 
@@ -154,7 +154,7 @@ There are two things that should help you tackle this exercise:
 - Use the `NUM_OF_GUESSES_ALLOWED` constant, when needed.
 - No `key` warnings in the console.
 
-## Exercise 4: Game logic
+## 1.6. Exercise 4: Game logic
 
 Alright: over the first 3 exercises, we've been setting up all of the structure and scaffolding. It's time to do some game-logic stuff!
 
@@ -209,7 +209,7 @@ Your task is to use this function to validate the user's guesses, and apply the 
 - When rendering the letters in the `Guess` component, apply the letter's `status` to the `cell` element.
 - "Empty" guess slots should have the same markup as before: `<span class="cell"></span>`.
 
-## Exercise 5: winning and losing
+## 1.7. Exercise 5: winning and losing
 
 We're so close! We only have one concern left: ending the game.
 
@@ -249,7 +249,7 @@ When the game is over, one of these banners should be shown, and the text input 
 
 ---
 
-# Stretch Goals
+# 2. Stretch Goals
 
 If you're looking for an additional challenge, give these stretch goals a shot!
 
@@ -257,7 +257,7 @@ Unlike the standard exercises, no solution video is available for these goals, t
 
 Also, feel free to come up with _your own_ stretch goals! If there's a thing you'd like to implement, go for it!!
 
-## Visual Keyboard
+## 2.1. Visual Keyboard
 
 In the real Wordle game, a keyboard is shown below the guesses:
 
@@ -284,7 +284,7 @@ Here's what the keyboard looked like in my implementation:
 - No need to include "Enter" and "Backspace" keys.
 - Don't worry too much about the styling, trying to get the alignment to look exactly like a real keyboard.
 
-## Restart button
+## 2.2. Restart button
 
 One of Wordle's hooks is that you can only play 1 game per day: there's a new word for all users every day. As a result, there's no "restart button", you just have to wait until the next day.
 
