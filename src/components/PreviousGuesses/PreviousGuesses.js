@@ -4,11 +4,11 @@ import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
 import { range } from '../../utils';
 import Guess from '../Guess';
 
-function PreviousGuesses({ guesses }) {
+function PreviousGuesses({ guesses, answer }) {
     return (
       <div className="guess-results">
         {range(NUM_OF_GUESSES_ALLOWED).map((guessIndex) => (
-            <Guess key={guessIndex} value={guesses[guessIndex]} />   
+            <Guess key={guessIndex} value={guesses[guessIndex]} answer={answer} />   
         ))}
       </div>
     );
